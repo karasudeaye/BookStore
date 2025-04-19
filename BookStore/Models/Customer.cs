@@ -2,14 +2,16 @@
 
 namespace BookStore.Models
 {
-    public class Category
+    public class Customer
     {
         [Key]
         public int Id { get; set; }
-        [MaxLength(100)]
-        [Required]
-        public string Name { get; set; }
-        public virtual List<Book>? Books { get; set; }
 
+        [Required]
+        public string FullName { get; set; }
+
+        public string Email { get; set; }
+
+        public string Address { get; set; } 
     }
 }
